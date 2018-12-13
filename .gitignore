@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.py[co]
+__pycache__/
+ui/node_modules/
+ui/dist/

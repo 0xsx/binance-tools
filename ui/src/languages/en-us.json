@@ -1,0 +1,12 @@
+{
+
+  "isLr": true,
+
+  "strings": {
+    "name": "Trading bot",
+
+    "fatalError": "A fatal error has occurred",
+
+    "notRunning": "Not running."
+  }
+}

@@ -1,0 +1,89 @@
+
+{
+
+  // API key for binance api.
+  "api_key": "",
+
+  // Secret key for binance api.
+  "api_secret": "",
+
+
+  // Trading pairs to record and save market data for.
+  "save_pairs": ["ethbtc", "ethusdt", "btcusdt", "xmrbtc",
+                 "bccusdt", "xlmbtc", "rvnbtc"],
+
+  // Pairs to be traded. Currently trading is not implemented.
+  "trade_pairs": [],
+
+  // Directory to store recorded market data.
+  "data_store_dir": "/path/to/data/dir",
+
+
+  "ui_host_ip": "0.0.0.0",
+  "ui_host_port": 8888,
+
+
+
+  // Time window in milliseconds for api commands sent to the server to remain valid.
+  "account_recv_window": 5000,
+  "trade_recv_window": 1500,
+
+
+  // Update resolution for app processes in milliseconds.
+  "proc_update_res": 500,
+
+
+  // Seconds to wait for connection to be established.
+  "connect_timeout": 20,
+
+
+  // Seconds to wait for API request to process.
+  "request_timeout": 10,
+
+
+  // Maximum number of seconds for a session to remain open before being reconnected.
+  // Binance allows a maximum websocket session of 24 hours.
+  // See https://github.com/binance-exchange/binance-official-api-docs/blob/master/web-socket-streams.md
+  "max_session_time": 72000,
+
+
+  // Minimum time in seconds to get an orderbook depth snapshot from the server.
+  "depth_snapshot_interval": 6,
+
+  // Number of price and time bins for quantizing depth snapshots.
+  "num_depth_bins": 16,
+
+
+  // Number of seconds between posting current orderbook states.
+  "orderbook_interval": 1,
+
+
+  // Number of decimal places to use for representing account balances.
+  "balance_precision": 8,
+
+
+
+  // Length of trading period in milliseconds.
+  "period_time": 3000,
+
+  
+
+
+  // Fee percentage per trade.
+  // This is the amount the exchange charges per trade, assuming a flat fee
+  // for every kind of trade.
+  "fee_percent": 0.0015,
+
+  // Number of timesteps to determine whether to change position.
+  "trade_history_length": 5,
+
+
+  // Probability threshold for executing buy requests.
+  "buy_threshold": 0.7,
+
+  // Probability threshold for executing sell requests.
+  "sell_threshold": 0.7
+
+
+
+}
